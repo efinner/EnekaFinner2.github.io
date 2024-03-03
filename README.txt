@@ -1,32 +1,166 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Eneka's Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
+        <!-- Wrapper -->
+            <div id="wrapper" class="fade-in">
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+                <!-- Intro -->
+                    <div id="intro">
+                        <h1>Eneka Finner</h1>
+                        <p>Here you will find projects that I have worked on using different tools for Data Analysis. Currently enrolled at Illinois Tech learning Information Technology.  <a href= "https://www.linkedin.com/in/eneka-finner-a4b576a6/">@EnekaFinner</a> 
+                        <ul class="actions">
+                            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                        </ul>
+                    </div>
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+                <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo">Data Analysis</a>
+                    </header>
 
-(* = not included)
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li class="active"><a href="index.html">Projects</a></li>
+                            
+                        </ul>
+                        <ul class="icons">
+                        
+                            <li><a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+                                
+                            <li><a href="https://github.com/efinner/PortfolioProjects" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </nav>
 
-AJ
-aj@lkn.io | @ajlkn
+                <!-- Main -->
+                    <div id="main">
 
+                        <!-- Featured Post -->
+                            <article class="post featured">
+                                <header class="major">
+                                    <span class="date">2024</span>
+                                    <h2><a href="https://public.tableau.com/app/profile/eneka.finner/vizzes">Tableau Projects <br />
+                                    Visualization</a></h2>
+                                    <p></p>
+                                </header>
+                                <a href="https://public.tableau.com/app/profile/eneka.finner/vizzes" class="image main"><img src="images/tableua.png" alt="" /></a>
+                                <ul class="actions special">
+                                    <li><a href="https://public.tableau.com/app/profile/eneka.finner/vizzes" class="button large">View Projects</a></li>
+                                </ul>
+                            </article>
 
-Credits:
+                        <!-- Posts -->
+                            <section class="posts">
+                                <article>
+                                    <header>
+                                        <span class="date">2024</span>
+                                        <h2><a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1">Emergency Room Dashboard<br />
+                                        </a></h2>
+                                    </header>
+                                    <a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1" class="image fit"><img src="images/er.jpg" alt="" /></a>This fake Tableau-based ER Dashboard serves as a comprehensive and user-friendly tool for monitoring, analyzing, and optimizing emergency room operations. Fake data real-time data integration, the dashboard empowers healthcare professionals to enhance patient care quality, resource utilization, and overall ER performance.
+                                    <p></p>
+                                    <ul class="actions special">
+                                        <li><a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1" class="button">Dashboard</a></li>
+                                    </ul>
+                                </article>
+                                <article>
+                                    <header>
+                                        <span class="date">2023</span>
+                                        <h2><a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2">Covid Dashboard<br />
+                                        </a></h2>
+                                    </header>
+                                    <a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2" class="image fit"><img src="images/covid19.jpg" alt="" /></a>
+                                    <p>Tableau-based COVID-19 Dashboard for the year 2020 to 2022 provided a comprehensive visual representation of the global pandemic's impact, deaths, vaccinations, trends, and patterns related to the spread, and healthcare response to the COVID-19 virus.</p>
+                                    <ul class="actions special">
+                                        <li><a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2" class="button">Dashboard</a></li>
+                                    </ul>
+                                </article>
+                                <article>
+                                    <header>
+                                        <span class="date">2023</span>
+                                        <h2><a href="https://github.com/efinner/Cleaning-Data-in-SQL-">Data Cleaning<br />
+                                        In SQL</a></h2>
+                                    </header>
+                                    <a href="https://github.com/efinner/Cleaning-Data-in-SQL-" class="image fit"><img src="images/sql.png" alt="" /></a>
+                                    <p> Using MyQL I completed a Data Cleaning Project for COVID. It aims to process, clean, and prepare raw pandemic-related data from diverse sources into a standardized and structured format suitable for analysis, reporting, and visualization.</p>
+                                    <ul class="actions special">
+                                        <li><a href="https://github.com/efinner/Cleaning-Data-in-SQL-" class="button">GitHub</a></li>
+                                    </ul>
+                                
 
-	Demo Images:
-		Unsplash (unsplash.com)
+                        
+                    <div>
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <form method="post" action="#">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" /></li>
+                </ul>
+            </form>
+        </section>
+        <section class="split contact">
+            <section class="alt">
+                <h3>Address</h3>
+                <p>Tucson Arizona <br /></p>
+            </section>
+            <section>
+                <h3>Email</h3>
+                <p><a href="mailto:efinner14@gmail.com">efinner14@gmail.com</a></p>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <li><a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/efinner/PortfolioProjects" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+</div>
 
-	Icons:
-		Font Awesome (fontawesome.io)
+        
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+                <!-- Copyright -->
+                    <div id="copyright">
+                        </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
