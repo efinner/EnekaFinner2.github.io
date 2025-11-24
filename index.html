@@ -1,285 +1,418 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Eneka's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Styling for the Resume section */
-			#resume {
-				background-color: #f8f9fa; 
-				color: #333;
-				padding: 40px;
-				border-radius: 10px;
-				width: 80%;
-				margin: 40px auto;
-				text-align: center;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			}
+<html lang="en">
+  <head>
+    <title>Eneka Finner – Accessibility & Data</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-			#resume h3 {
-				margin-top: 20px;
-				font-size: 2em;
-				color: #0056b3; /* Blue color for all headings */
-				border-bottom: 2px solid #0056b3;
-				padding-bottom: 10px;
-				text-align: center;
-			}
+    <style>
+      /* Styling for the Resume section */
+      #resume {
+        background-color: #f8f9fa;
+        color: #333;
+        padding: 40px;
+        border-radius: 10px;
+        width: 80%;
+        margin: 40px auto;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
 
-			#resume ul {
-				list-style: none;
-				padding: 0;
-				margin-bottom: 20px;
-			}
+      #resume h3 {
+        margin-top: 20px;
+        font-size: 2em;
+        color: #0056b3; /* Blue color for all headings */
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 10px;
+        text-align: center;
+      }
 
-			#resume ul li {
-				margin-bottom: 10px;
-				font-size: 1.2em;
-				text-align: left;
-			}
+      #resume ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
 
-			/* Styling for individual sections in resume (Experience, Skills, Certifications) */
-			#resume .section {
-				margin-bottom: 30px;
-				padding: 20px;
-				background-color: white;
-				border-radius: 8px;
-				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-				text-align: center;
-			}
+      #resume ul li {
+        margin-bottom: 10px;
+        font-size: 1.05em;
+        text-align: left;
+      }
 
-			/* Button at the top */
-			#scroll-to-resume {
-				display: block;
-				margin: 20px auto;
-				padding: 10px 20px;
-				background-color: #f39c12;
-				color: white;
-				border: none;
-				border-radius: 5px;
-				cursor: pointer;
-				text-align: center;
-			}
+      /* Styling for individual sections in resume (Experience, Skills, Certifications) */
+      #resume .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
 
-			#scroll-to-resume:hover {
-				background-color: #e67e22;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+      /* Button at the top */
+      #scroll-to-resume {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #f39c12;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+      }
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+      #scroll-to-resume:hover {
+        background-color: #e67e22;
+      }
 
-			<!-- Intro -->
-			<div id="intro">
-				<h1>Eneka Finner</h1>
-				<p>With over 7 years of experience in assistive technology, I’ve recently expanded my skills to include AWS cloud services, frontend development, and data analytics.
-					 My work reflects a blend of technical expertise 
-					and practical problem-solving, from building responsive web applications to turning data into insights that empower decision-making.
-					<a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/">@EnekaFinner</a> 
-				<ul class="actions">
-					<!-- Updated Projects button to scroll to projects section -->
-					<li><a href="#projects" class="button icon solid solo fa-arrow-down scrolly">View Projects</a></li>
-				</ul>
-			</div>
+      /* Shrink featured project image + spacing */
+      .post.featured .image.main img {
+        max-height: 320px;
+        width: auto;
+        object-fit: cover;
+      }
 
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">IT Professional and Frontend Developer</a>
-			</header>
+      .post.featured header.major h2 {
+        font-size: 1.8em;
+      }
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li class="active"><a href="index.html">Projects</a></li>
-					<li><a href="#resume">Resume</a></li>
-				</ul>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/efinner/PortfolioProjects" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+      .post.featured {
+        padding: 2rem 1rem;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
 
-			<!-- Button to scroll to resume -->
-			<button id="scroll-to-resume" onclick="document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });">
-				View My Resume
-			</button>
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
 
-			<!-- Main -->
-			<div id="main">
+      <!-- Intro -->
+      <div id="intro">
+        <h1>Eneka Finner</h1>
+        <p>
+          Accessibility-focused technologist with 7+ years of experience in assistive technology
+          and training for veterans with vision loss. I’m now building on that background to move
+          into digital accessibility testing, screen-reader, and data storytelling with
+          Power&nbsp;BI and Tableau. I also have experience with frontend development and AWS cloud
+          services.
+          <br />
+          Actively strengthening skills toward IAAP CPACC and entry-level accessibility roles or Junior Data Analysis.
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/">@EnekaFinner</a>
+        </p>
+        <ul class="actions">
+          <li><a href="#projects" class="button icon solid solo fa-arrow-down scrolly">View Projects</a></li>
+        </ul>
+      </div>
 
-				<!-- Featured Post -->
-				<article class="post featured">
-					<header class="major">
-						<span class="date">2024</span>
-						<h2><a href="https://public.tableau.com/app/profile/eneka.finner/vizzes">Tableau Projects <br />Visualization</a></h2>
-					</header>
-					<a href="https://public.tableau.com/app/profile/eneka.finner/vizzes" class="image main"><img src="images/tableua.png" alt="" /></a>
-					<ul class="actions special">
-						<li><a href="https://public.tableau.com/app/profile/eneka.finner/vizzes" class="button large">View Projects</a></li>
-					</ul>
-				</article>
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Accessibility · Assistive Tech · Data</a>
+      </header>
 
-				<!-- Projects Section with the id "projects" -->
-				<section id="projects" class="posts">
-					<article>
-						<header>
-							<span class="date">2024</span>
-							<h2><a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1">Emergency Room Dashboard<br />
-							</a></h2>
-						</header>
-						<a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1" class="image fit"><img src="images/er.jpg" alt="" /></a>
-						<p>Fake Tableau-based ER Dashboard serves as a comprehensive tool for monitoring, analyzing, and optimizing emergency room operations.</p>
-						<ul class="actions special">
-							<li><a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1" class="button">Dashboard</a></li>
-						</ul>
-					</article>
+      <!-- Nav -->
+      <nav id="nav" aria-label="Main navigation">
+        <ul class="links">
+          <li class="active"><a href="index.html">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/"
+               class="icon brands alt fa-linkedin"
+               aria-label="LinkedIn profile for Eneka Finner">
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/efinner/PortfolioProjects"
+               class="icon brands alt fa-github"
+               aria-label="GitHub portfolio projects">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-					<article>
-						<header>
-							<span class="date">2023</span>
-							<h2><a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2">Covid Dashboard<br />
-							</a></h2>
-						</header>
-						<a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2" class="image fit"><img src="images/covid19.jpg" alt="" /></a>
-						<p>The Tableau-based COVID-19 Dashboard for 2020-2022 provides a visual representation of the pandemic's impact, trends, and healthcare response.</p>
-						<ul class="actions special">
-							<li><a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2" class="button">Dashboard</a></li>
-						</ul>
-					</article>
-				</section>
-				<div class="centered">
-					<h2>Web Development Projects</h2>
-					<ul>
-						<li><strong>Weather App</strong> – A responsive weather app built using HTML, CSS, and JavaScript. It fetches real-time weather data from an API and displays it based on user input.</li>
-						<li>
-							<ul class="actions special">
-								<li><a href="https://efinner.github.io/weather/" class="button">Check it out here</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+      <!-- Button to scroll to resume -->
+      <button id="scroll-to-resume" type="button"
+              onclick="document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });">
+        View My Resume
+      </button>
 
-				<!-- Resume Section -->
-				<section id="resume">
-					<header class="major">
-						<h2>Resume</h2>
-					</header>
+      <!-- Main -->
+      <div id="main">
 
-					<!-- Experience -->
-					<div class="section">
-						<h3>Experience</h3>
-						<ul>
-							<li><strong>Frontend Intern | Hiihat (2024 - Present)</strong></li>
-							<ul>
-								<li>Built frontend applications using React and various libraries.</li>
-								<li>Developed backend functionality using Python and Node.js. </li>
-								<li>Integrated APIs to ensure smooth data flow between frontend and backend.</li>
-							</ul>
+        <!-- Featured Post -->
+        <article class="post featured">
+          <header class="major">
+            <span class="date">2024</span>
+            <h2>
+              <a href="https://public.tableau.com/app/profile/eneka.finner/vizzes">
+                Tableau &amp; Power&nbsp;BI Visualizations
+              </a>
+            </h2>
+            <p>
+              Interactive dashboards for healthcare and public-health scenarios, focused on clear
+              data stories and accessible visuals.
+            </p>
+          </header>
+          <a href="https://public.tableau.com/app/profile/eneka.finner/vizzes"
+             class="image main">
+            <img src="images/tableua.png"
+                 alt="Preview of Tableau dashboards showing multiple visualizations created by Eneka" />
+          </a>
+          <ul class="actions special">
+            <li><a href="https://public.tableau.com/app/profile/eneka.finner/vizzes" class="button large">View Projects</a></li>
+          </ul>
+        </article>
 
-							<li><strong>Data Scientist | AmeriCorps (2024)</strong></li>
-							<ul>
-								<li>Conducted data analysis using SQL and Power BI</li>
-								<li>Automated data reporting tasks using Google App Script</li>
-							</ul>
-							<ul>
-								<li><strong>Assistive Technology | Veteran Affairs (2017 - 2024)</strong></li>
-							</ul>
-							<li>Trained veterans in using software and resolving technical issues.</li>
-								<li>Diagnosed and fixed device and software problems.</li>
-								<li>Customized assistive technology for accessibility needs.</li>
-								<li>Provided remote support for troubleshooting assistive devices.</li>
-								<li>Configured devices to meet veterans' specific needs.</li>
-							<li> </li>
-						</ul>
-					</div>
+        <!-- Projects Section with the id "projects" -->
+        <section id="projects" class="posts" aria-label="Project examples">
+          <article>
+            <header>
+              <span class="date">2024</span>
+              <h2>
+                <a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1">
+                  Emergency Room Dashboard
+                </a>
+              </h2>
+            </header>
+            <a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1"
+               class="image fit">
+              <img src="images/er.jpg"
+                   alt="Emergency room dashboard showing patient volume and wait-time metrics" />
+            </a>
+            <p>
+              A mock ER dashboard built in Tableau that monitors patient volume, wait times,
+              and throughput. Designed to support quick, data-driven decisions for hospital
+              leaders.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a href="https://public.tableau.com/app/profile/eneka.finner/viz/EmergencyRoomDashboard_17020716957340/Dashboard1"
+                   class="button">
+                  View dashboard
+                </a>
+              </li>
+            </ul>
+          </article>
 
-					<!-- Skills -->
-					<div class="section">
-						<h3>Skills</h3>
-						<ul>
-							<li>Frontend Development: React, HTML, CSS, JavaScript, APIs</li>
-							<li>Data Science: SQL, Power BI, Tableau</li>
-							<li>Cloud: AWS (Amplify, EC2, S3)</li>
-						</ul>
-					</div>
+          <article>
+            <header>
+              <span class="date">2023</span>
+              <h2>
+                <a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2">
+                  COVID-19 Trend Dashboard
+                </a>
+              </h2>
+            </header>
+            <a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2"
+               class="image fit">
+              <img src="images/covid19.jpg"
+                   alt="COVID-19 dashboard visualizing case counts and trends from 2020 to 2022" />
+            </a>
+            <p>
+              Tableau dashboard displaying COVID-19 trends, case counts, and rolling averages
+              across multiple years, with filters that make it easy to compare regions and time
+              periods.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a href="https://public.tableau.com/app/profile/eneka.finner/viz/CovidDashboard_17013693408900/Dashboard2"
+                   class="button">
+                  View dashboard
+                </a>
+              </li>
+            </ul>
+          </article>
+        </section>
 
-					<!-- Education -->
-					<div class="section">
-						<h3>Education</h3>
-						<ul>
-							<li><strong>Master’s in Information Technology | Illinois Tech (Ongoing)</strong></li>
-						</ul>
-					</div>
+        <div class="centered">
+          <h2>Web Development Projects</h2>
+          <ul>
+            <li>
+              <strong>Weather App</strong> –
+              A responsive weather app built using HTML, CSS,
+              and JavaScript. It fetches real-time weather data from an API and presents a clean,
+              keyboard-navigable interface.
+            </li>
+          </ul>
+          <ul class="actions special">
+            <li><a href="https://efinner.github.io/weather/" class="button">Open Weather App</a></li>
+          </ul>
+        </div>
 
-					<!-- Certifications Section -->
-					<div class="section">
-						<h3>Certifications</h3>
-						<ul>
-							<li>Google Foundations of IT Support</li>
-							<li>Foundations of Data Analysis and Data Science</li>
-							
-						</ul>
-					</div>
-				</section>
+        <!-- Resume Section -->
+        <section id="resume" aria-label="Resume">
+          <header class="major">
+            <h2>Resume</h2>
+          </header>
 
-			</div>
+          <!-- Experience -->
+          <div class="section">
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <strong>Talent Development Intern | Freeport-McMoRan (April 2025 – Present)</strong>
+                <ul>
+                  <li>Built leadership training dashboards using Power BI, Excel, pivot tables, and Power Query, including 12-month rolling visualizations.</li>
+                  <li>Analyzed leadership learning data (Accountability, Mastering Dialogue, BA/EP, WTS, MD, Udemy) and created site-level completion reports.</li>
+                  <li>Designed and maintained structured reporting datasets combining Employee List, Roster, and Learning History tables.</li>
+                  <li>Developed interactive e-learning content using Articulate Rise 360 and EasyGenerator, including video editing, transcripts, visuals, and accessibility adjustments.</li>
+                  <li>Supported facilitation of leadership classes (Psychological Safety, Civility, Expectations, Coaching Conversations) and coordinated session prep and materials.</li>
+                  <li>Improved SharePoint-based data workflows for the Talent Management team and collaborated closely with supervisors and coordinators.</li>
+                </ul>
+              </li>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<section class="split contact">
-					<!-- Address -->
-					<section>
-						<h3>Address</h3>
-						<p>Tucson, Arizona</p>
-					</section>
+              <li>
+                <strong>Frontend Intern | Hiihat (2024 – Jan 2025)</strong>
+                <ul>
+                  <li>Built frontend components in React with a focus on clean layout and basic accessibility (semantic HTML, keyboard navigation).</li>
+                  <li>Integrated REST APIs to display dynamic content and handled client-side state.</li>
+                  <li>Collaborated with the team on UI/UX decisions and basic responsive design.</li>
+                </ul>
+              </li>
 
-					<!-- Email -->
-					<section>
-						<h3>Email</h3>
-						<p><a href="mailto:efinner14@gmail.com" target="_blank">efinner14@gmail.com</a></p>
-					</section>
+              <li>
+                <strong>Data Scientist | AmeriCorps (2024)</strong>
+                <ul>
+                  <li>Analyzed program and community data using SQL, Excel, and Power&nbsp;BI.</li>
+                  <li>Designed Power&nbsp;BI dashboards to help non-technical stakeholders understand trends and outcomes.</li>
+                  <li>Automated recurring reports using Google Apps Script to reduce manual work.</li>
+                </ul>
+              </li>
 
-					<!-- Social Links -->
-					<section>
-						<h3>Social</h3>
-						<ul class="icons alt">
-							<li>
-								<a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/" target="_blank" class="icon brands alt fa-linkedin">
-									<span class="label">LinkedIn</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/efinner/PortfolioProjects" target="_blank" class="icon brands alt fa-github">
-									<span class="label">GitHub</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</section>
-			</footer>
+              <li>
+                <strong>Assistive Technology Specialist | U.S. Department of Veterans Affairs (2017 – 2024)</strong>
+                <ul>
+                  <li>Trained blind and low-vision veterans on screen readers, magnification tools, and accessibility features across Windows, iOS, and adaptive devices.</li>
+                  <li>Configured and customized assistive technology based on individual accessibility needs and goals.</li>
+                  <li>Troubleshot hardware and software issues remotely and in person, documenting issues clearly for follow-up.</li>
+                  <li>Helped veterans build confidence using technology for work, school, and daily life — experience that translates directly into user-focused accessibility testing.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-			<!-- Copyright -->
-			<div id="copyright">
-				<ul>
-					<li>&copy; Eneka Finner</li>
-					<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
+          <!-- Skills -->
+          <div class="section">
+            <h3>Skills</h3>
+            <ul>
+              <li>
+                <strong>Accessibility &amp; Assistive Technology</strong> – Screen readers (JAWS, NVDA, VoiceOver),
+                magnification tools, keyboard-only navigation, basic WCAG 2.1 awareness, user-focused accessibility testing,
+                Windows and iOS accessibility features.
+              </li>
+              <li>
+                <strong>Data &amp; Reporting</strong> – Power&nbsp;BI (dashboards, measures, basic DAX),
+                Tableau, SQL, Excel, data cleaning and visual storytelling for non-technical audiences.
+              </li>
+              <li>
+                <strong>Web &amp; Cloud</strong> – HTML, CSS, JavaScript, React (fundamentals), REST APIs,
+                AWS services used in student projects (Amplify, EC2, S3).
+              </li>
+              <li>
+                <strong>Collaboration</strong> – Training, technical support, documentation, and
+                cross-functional work with educators, veterans, and stakeholders.
+              </li>
+            </ul>
+          </div>
 
+          <!-- Education -->
+          <div class="section">
+			<h3>Education</h3>
+			<ul>
+				<li><strong>Master’s in Information Technology</strong> – Illinois Institute of Technology (Completed June 2025)</li>
+		
+				<li><strong>Bachelor of Science in Exercise Science</strong> – Western Michigan University (Completed 2014)</li>
+		
+				<li><strong>Master of Arts in Vision Rehabilitation Counseling</strong> – Western Michigan University (Completed 2017)</li>
+		
+				<li><strong>Master of Arts in Vision Rehabilitation Therapy</strong> – Western Michigan University (Completed 2017)
+					<br />Specialization: Assistive Technology
+				</li>
+			</ul>
 		</div>
+		
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+          <!-- Certifications Section -->
+          <div class="section">
+            <h3>Certifications</h3>
+            <ul>
+              <li>Google Foundations of IT Support</li>
+              <li>Foundations of Data Analysis and Data Science</li>
+              <li>IAAP CPACC – in preparation (Accessibility Core Competencies)</li>
+            </ul>
+          </div>
+        </section>
 
-	</body>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <!-- Address -->
+          <section>
+            <h3>Location</h3>
+            <p>Tucson, Arizona, USA</p>
+          </section>
+
+          <!-- Email -->
+          <section>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:efinner14@gmail.com">efinner14@gmail.com</a>
+            </p>
+          </section>
+
+          <!-- Social Links -->
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a href="https://www.linkedin.com/in/eneka-finner-a4b576a6/"
+                   target="_blank"
+                   class="icon brands alt fa-linkedin"
+                   aria-label="LinkedIn profile">
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/efinner/PortfolioProjects"
+                   target="_blank"
+                   class="icon brands alt fa-github"
+                   aria-label="GitHub profile">
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>&copy; Eneka Finner</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
 </html>
