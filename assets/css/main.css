@@ -176,7 +176,7 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: justify;
+		text-align: left;
 		margin: 0 0 2rem 0;
 	}
 
@@ -4687,3 +4687,25 @@ input, select, textarea {
 		}
 
 	}
+	/* Accessibility contrast fix for footer */
+#footer,
+#footer a,
+#footer h3,
+#footer p,
+#footer li {
+  color: #333 !important;
+}
+
+#footer a {
+  border-bottom-color: rgba(51, 51, 51, 0.5) !important;
+}
+/* Accessibility fix for copyright bar */
+#copyright,
+#copyright li,
+#copyright a {
+    color: #ffffff !important;
+}
+
+#copyright a {
+    border-bottom-color: rgba(255, 255, 255, 0.5) !important;
+}
